@@ -32,14 +32,3 @@ ser.listen(3000);
 //var test = require('./ClientCall/Call_RESTful');
 //test();
 
-//var ping = require('ping');
-//ping.promise.probe('192.168.41.244').then(function (res) {
-//    var eIndex = res.output.lastIndexOf('=');
-//    var ta = res.output.substring(eIndex + 1); //取平均响应时间
-//    if (ta.indexOf('ms') < 0) {
-//            console.log("超时");
-//    }
-//    else {
-//        console.log(ta);
-//    }
-//});
