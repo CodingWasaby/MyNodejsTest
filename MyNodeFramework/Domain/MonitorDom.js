@@ -6,14 +6,15 @@ var manage = require('../Cache/Manage');
 var ping = require('../CommonTools/PingTools');
 var config = require('../CommonTools/Config');
 var timeTools = require('../CommonTools/TimeTools');
+var util = require('util');
 
 var date = Date.now();
 exports.Monitor = function () {
     MonitorServer();
     MonitorService();
-    //console.log('\033[2J');
+    //console.log("\u001b[2J\u001b[0;0H");
     //console.log("检测程序正常执行中...");
-    //console.log("程序已运行：" + timeTools.MillisecondToTime(Date.now() - date) + "\n");
+    //console.log("程序已运行：" + timeTools.MillisecondToTime(Date.now() - date));
 }
 
 function MonitorServer() {
@@ -33,7 +34,7 @@ function MonitorServer() {
     }
 }
 
-function IsContain_Server(servers, ServerCode) {  
+function IsContain_Server(servers, ServerCode) {
     for (var i = 0; i < servers.length; i++) {
         if (servers[i].ServerCode == ServerCode)
             return true;

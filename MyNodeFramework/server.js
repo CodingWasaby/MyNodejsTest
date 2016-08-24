@@ -7,9 +7,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 RESTful.registeAllService(app);
 var server = app.listen(9999);
 
-//var monitor = require('./Domain/MonitorDom');
-//global._IntervalTime = setInterval(monitor.Monitor, 2000);
-//console.log("检测程序正常执行中...");
+var monitor = require('./Domain/MonitorDom');
+global._IntervalTime = setInterval(monitor.Monitor, 2000);
+console.log("检测程序正常执行中...");
 
 var ser = require('http').createServer(app);
 var io = require('socket.io')(ser);
