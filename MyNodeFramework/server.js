@@ -29,4 +29,4 @@ io.on('connection', function (client) {
 });
 ser.listen(3000);
 
-
+//自动补全，提示操作需要 typings
