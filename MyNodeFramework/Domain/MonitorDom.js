@@ -33,7 +33,6 @@ function MonitorServer() {
         });
     }
 }
-
 function IsContain_Server(servers, ServerCode) {
     for (var i = 0; i < servers.length; i++) {
         if (servers[i].ServerCode == ServerCode)

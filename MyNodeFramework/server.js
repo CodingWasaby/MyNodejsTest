@@ -1,4 +1,5 @@
-﻿var express = require('express');
+﻿/// <reference path=".\NodeSnippet\typings\globals\node\index.d.ts" />
+var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var RESTful = require('./RESTful_Server/RESTful');
@@ -28,7 +29,4 @@ io.on('connection', function (client) {
 });
 ser.listen(3000);
 
-//var a = 1;
-//var test = require('./ClientCall/Call_RESTful');
-//test();
 
