@@ -54,6 +54,7 @@
     <Compile Include="CommonTools\SQLHandler\MSSQLConnection.js" />
     <Compile Include="CommonTools\XMLTools.js" />
     <None Include="oo.pubxml" />
+    <Content Include="jadeTest\test.jade" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
@@ -64,6 +65,7 @@
     <Folder Include="ClientCall\" />
     <Folder Include="Cache\" />
     <Folder Include="Domain\" />
+    <Folder Include="jadeTest\" />
     <Folder Include="RESTful_Server\" />
     <Folder Include="RESTful_Server\Services\" />
   </ItemGroup>

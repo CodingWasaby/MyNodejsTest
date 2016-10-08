@@ -2,13 +2,13 @@
 var config = require('../CommonTools/config');
 
 exports.getServerInfoList = function () {
-    return xml.getXMLDate(config.ServerInfoXMLName);
+    return xml.getXMLData(config.ServerInfoXMLName);
 }
 
 //更新服务器信息，包含增加，修改，删除
 //当CODE一样时，更新当条数据
 exports.updateServerInfo = function (server, isReduce, callBack) {
-    var dataArray = xml.getXMLDate(config.ServerInfoXMLName);
+    var dataArray = xml.getXMLData(config.ServerInfoXMLName);
     var newArray = [];
     for (var i = 0; i < dataArray.length; i++) {
         if (dataArray[i].ServerCode != server.ServerCode) {

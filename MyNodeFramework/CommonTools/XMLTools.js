@@ -28,7 +28,7 @@ exports.addXML = function (arr, xmlName, callBack) {
     });
 }
 
-exports.getXMLDate = function (xmlName) {
+exports.getXMLData = function (xmlName) {
     var dataArray = [];
     if (!fs.existsSync(config.XMLPath + xmlName + '.xml'))
         return dataArray;
